@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Decipher Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Caesar Cipher Decipher Tool</h1>
+        <label for="encryptedText">Encrypted Text:</label>
+        <textarea placeholder="paste the encrypted message here.."id="encryptedText" rows="4" cols="50"></textarea>
+        
+        <label for="shift">Shift Value:</label>
+        <input type="number" id="shift" value="3">
+        
+        <button onclick="decipherText()">Decipher</button>
+        
+        <h2>Deciphered Text:</h2>
+        <p id="decipheredText"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
